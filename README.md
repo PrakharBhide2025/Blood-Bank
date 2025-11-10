@@ -1,27 +1,37 @@
-Features
-It is an Online Blood Bank Management System which can facilitate you to contribute as a donor and also manage the entire application.
-It has 2 modes of operation as 
-1) ADMIN 
-2) USER
-ADMIN Mode
-This mode makes you as an admin and you can perform various activities like...
-Adding a Blood Donor
-Managing Users/patients
-Managing Donors
-Check the available Blood Stocks
-view Blood Request history
-Accept or Reject the Blood Request given by the users/patients
-Get various details on the admin dashboard as various blood groups and number of units of blood available per blood group.
+🩸 Online Blood Bank Management System
+A secure and scalable Online Blood Bank Management System (BBMS) built using Java (Spring Boot) and Angular.
+The system enables users to donate blood, request blood, and allows administrators to manage donors, users, and blood inventory — all while maintaining data confidentiality, integrity, and availability through built-in cryptographic protocols.
+
+🚀 Features
+The application offers two modes of operation:
+1.	ADMIN Mode
+2.	USER Mode
 
 
-USER Mode
-This mode makes you as a user and you can perform various activities like
-User can register for a new account in-order to login to the portal
-Make a blood request for you / a known patient
-check the blood request history and know whether the admin accepted or rejected your request
-View & Edit user profile details
-Donate your blood
-check available blood donors
-check blood stock availability
-Get various details on the user dashboard as total blood donors available, total blood units available, total registered users, your contribution as donor & requests & total blood groups available.
-[Additional Feature: Automatically Removes Blood Samples that are older than 90 days.]
+🔭 ADMIN Mode
+Admins have full access to manage blood bank operations and perform the following activities:
+•	➕ Add New Blood Donors
+•	👥 Manage Users / Patients
+•	❤️ Manage Blood Donors
+•	🧪 Check Available Blood Stocks
+•	📜 View Blood Request History
+•	✅ Accept or Reject Blood Requests
+•	📊 Admin Dashboard displaying:
+•	Total units available per blood group
+•	Number of active donors and requests
+
+😄 USER Mode
+Users can register, donate, or request blood securely through their dashboard.
+•	📝 Register & Login to the portal
+•	🩸 Make Blood Requests for self or others
+•	📖 View Blood Request History with approval status
+•	👤 View & Edit Profile Details
+•	💉 Donate Blood and record contributions
+•	🔍 Search Available Donors
+•	🧫 Check Blood Stock Availability
+•	📈 User Dashboard showing:
+•	Total blood donors
+•	Total blood units available
+•	Your donation contributions
+•	Total registered users
+•	Blood groups available
