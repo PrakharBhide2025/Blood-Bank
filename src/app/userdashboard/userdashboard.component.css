@@ -1,0 +1,156 @@
+/* ===== Top Navbar ===== */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b3c4d; /* dark teal-blue tone */
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-logo .welcometxt {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.sidebar-logo .sidebar-text {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #e6e6e6;
+}
+
+.sidebar-logo .logoutbtn {
+  background-color: #124b5e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar-logo .logoutbtn:hover {
+  background-color: #0e3b4a;
+}
+
+/* ===== Sidebar Navigation ===== */
+.sidebar-container {
+  width: 220px;
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  padding-top: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-navigation li {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar-navigation li:hover {
+  background-color: #e6f3f8;
+  border-left: 4px solid #0b3c4d;
+}
+
+.sidebar-navigation i {
+  color: #0b3c4d;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.sidebar-navigation label {
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* ===== Main Content ===== */
+.row {
+  margin-left: 240px; /* spacing to push content beside sidebar */
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  background-color: #fff;
+}
+
+.row > div:first-child {
+  width: 100%;
+  text-align: center;
+  color: maroon;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* ===== Dashboard Cards ===== */
+#bloodCards {
+  width: 280px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  text-align: left;
+  padding: 20px;
+}
+
+#bloodCards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#bloodCards .card-body {
+  padding: 10px;
+}
+
+#bloodCards .card-text,
+#bloodCards div {
+  color: #333;
+}
+
+#bloodCards i {
+  color: #0b3c4d;
+}
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 992px) {
+  .sidebar-container {
+    width: 180px;
+  }
+  .row {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  #bloodCards {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    display: none;
+  }
+  .row {
+    margin-left: 0;
+  }
+}
